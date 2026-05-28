@@ -52,6 +52,13 @@ class Queues
         cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n"
              << endl;
 
+        if (FRONT == REAR)
+        {
+            FRONT = -1;
+            REAR = -1;
+        }
+
+
     }
 
 };
